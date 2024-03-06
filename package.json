@@ -14,7 +14,10 @@
     "airdrop adexe <airdrop.adexe@gmail.com>"
   ],
   "license": "MIT",
-  "repository": "alifianadexe/express-adexe",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alifianadexe/express-adexe.git"
+  },
   "homepage": "http://expressjs.com/",
   "keywords": [
     "express",
