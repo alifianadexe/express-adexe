@@ -1,7 +1,7 @@
 {
   "name": "express-adexe",
   "description": "Fast, unopinionated, minimalist web framework modified by Adexe",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "TJ Holowaychuk <tj@vision-media.ca>",
   "contributors": [
     "Aaron Heckmann <aaron.heckmann+github@gmail.com>",
@@ -18,7 +18,7 @@
     "type": "git",
     "url": "https://github.com/alifianadexe/express-adexe.git"
   },
-  "homepage": "http://expressjs.com/",
+  "homepage": "http://express-adexe.com/",
   "keywords": [
     "express",
     "framework",
