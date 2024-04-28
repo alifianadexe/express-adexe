@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-var express = require('../../');
+var express = require('../..');
 var app = module.exports = express();
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
@@ -21,7 +21,7 @@ app.use(cookieParser('my secret here'));
 // parses x-www-form-urlencoded
 app.use(express.urlencoded({ extended: false }))
 
-app.get('/', function(req, res){
+app.get('/', function (req, res) {
   if (req.cookies.remember) {
     res.send('Remembered :). Click to <a href="/forget">forget</a>!.');
   } else {
@@ -31,12 +31,12 @@ app.get('/', function(req, res){
   }
 });
 
-app.get('/forget', function(req, res){
+app.get('/forget', function (req, res) {
   res.clearCookie('remember');
   res.redirect('back');
 });
 
-app.post('/', function(req, res){
+app.post('/', function (req, res) {
   var minute = 60000;
   if (req.body.remember) res.cookie('remember', 1, { maxAge: minute });
   res.redirect('back');
